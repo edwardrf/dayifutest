@@ -1,0 +1,15 @@
+package main
+
+templ index() {
+	<html>
+		<head>
+			<title>DaYiFu.net</title>
+			<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+		</head>
+		<body>
+			<div>Welcome to DaYiFu.net </div>
+			<button hx-post="/next/30" hx-trigger="click" hx-target="#content">Next</button>
+			<div id="content"></div>
+		</body>
+	</html>
+}
